@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection ?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+
+<VBox  xmlns:fx="http://javafx.com/fxml" 
+       fx:controller="edu.jose.dida.playasGaliAstur.PrincipalControler" alignment="TOP_CENTER"  >
+    <ToolBar HBox.hgrow ="ALWAYS" orientation="HORIZONTAL" style="-fx-background-color:red;" >
+             <Button onAction="#verInformacion"  text="ver info" >
+                <!-- <graphic>
+                     <ImageView fx:id="imageInfo">
+                         <Image url ="@../../../../iconos/guardar.png"/>
+                     </ImageView>    
+                   </graphic>-->
+              </Button>
+              <Button onAction="#añadirOla"  text="añadir">
+                        <!--<graphic>
+                          <ImageView fx:id="imageAñadir">
+                              <Image url="@../../../../iconos/editar.png"/>     
+                          </ImageView> 
+                          </graphic>-->
+               </Button>
+               <Button onAction="#eliminar"  text="eliminar">
+                     <!--  <graphic>
+                           <ImageView fx:id="imageEliminar">
+                               <Image url="@../../../../iconos/eliminar.png"/>
+                            </ImageView>
+                        </graphic>-->
+               </Button>
+         </ToolBar>
+    <Label text="Olas GaliAstur" style= "-fx-font-weight: bold;"/>       
+    <HBox>
+        <Button styleClass="add-wave-button" text="Añadir ola" onAction="#añadirOla"/>
+        <Button text="Lista Olas" onAction="#verInformacion"/>
+    </HBox>
+    <stylesheets>
+        <URL value="@Principal.css"/>
+    </stylesheets>
+
+
+</VBox>

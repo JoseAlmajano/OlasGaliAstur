@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.effect.Reflection ?>
+
+
+<VBox  xmlns:fx="http://javafx.com/fxml" fx:controller="edu.jose.dida.playasGaliAstur.FormularioOlaController">
+    <Text text="Formulario de ola" fill="DARKBLUE" style= "-fx-font-weight: bold;"/>       
+ 
+
+</VBox>
